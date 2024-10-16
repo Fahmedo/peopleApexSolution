@@ -9,41 +9,101 @@
   <body>
     <div class="nav-bar">
       <div class="nav">
-        <!-- <button class="hamburger">&#9776;</button>
-          <button class="close-menu">&#9776;</button> -->
         <div class="logo">
-          <a href="#"> PeopleApexSolution </a>
+          <a href="#">PeopleApexSolution</a>
         </div>
         <nav>
-        <ul class="nav-option">
+          <ul>
+            <li class="nav-item">
+              <a href="#service">Service</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#our-team">Our Team</a>
+            </li>
+            <li class="nav-item contact-btn">
+              <a href="#contact">Contact Us</a>
+            </li>
+          </ul>
+          <button onclick="showMenu()" class="open-button">
+            <svg
+              width="30px"
+              height="30px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              stroke="#fff"
+            >
+              <path
+                d="M4 6H20M4 12H14M4 18H9"
+                stroke="#fff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </button>
+        </nav>
+      </div>
+      <div class="mobile-view">
+        <button onclick="hideMenu()" class="close-button">
+          <svg
+            width="40px"
+            height="40px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              opacity="0.4"
+              d="M16.19 2H7.81C4.17 2 2 4.17 2 7.81V16.18C2 19.83 4.17 22 7.81 22H16.18C19.82 22 21.99 19.83 21.99 16.19V7.81C22 4.17 19.83 2 16.19 2Z"
+              fill="#fff"
+            ></path>
+            <path
+              d="M13.0594 12.0001L15.3594 9.70011C15.6494 9.41011 15.6494 8.93011 15.3594 8.64011C15.0694 8.35011 14.5894 8.35011 14.2994 8.64011L11.9994 10.9401L9.69937 8.64011C9.40937 8.35011 8.92937 8.35011 8.63938 8.64011C8.34938 8.93011 8.34938 9.41011 8.63938 9.70011L10.9394 12.0001L8.63938 14.3001C8.34938 14.5901 8.34938 15.0701 8.63938 15.3601C8.78938 15.5101 8.97937 15.5801 9.16937 15.5801C9.35937 15.5801 9.54937 15.5101 9.69937 15.3601L11.9994 13.0601L14.2994 15.3601C14.4494 15.5101 14.6394 15.5801 14.8294 15.5801C15.0194 15.5801 15.2094 15.5101 15.3594 15.3601C15.6494 15.0701 15.6494 14.5901 15.3594 14.3001L13.0594 12.0001Z"
+              fill="#fff"
+            ></path>
+          </svg>
+        </button>
+        <ul class="nav-option" onclick="itemClose()">
           <li class="nav-item">
-            <a href="#service"> Service </a>
-          </li>
-          
-          <li class="nav-item">
-            <a href="#about"> About Us </a>
+            <a href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#our-team"> Our Team </a>
+            <a href="#service">Service</a>
           </li>
-          <li class="nav-item contact">
-            <a href="#contact"> Contact Us </a>
+          <li class="nav-item">
+            <a href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#our-team">Our Team</a>
+          </li>
+          <li class="nav-item contact-btn">
+            <a href="#contact">Contact Us</a>
           </li>
         </ul>
-    </nav>
       </div>
     </div>
-    <div class="hero" id="#">
-      <div class="details">
-        <h1>People Apex <span> Solution</span></h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, iusto?
+
+    <section id="home">
+      <div class="hero">
+        <div class="details">
+          <h1>People Apex <span>Solution</span></h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+            iusto?
+          </p>
+        </div>
+        <div class="img-container">
+          <img src="./images/hr-pic.jpg" alt="hr" />
+        </div>
       </div>
-      <div class="img-container">
-        <img src="./images/hr-pic.jpg" alt="hr" />
-      </div>
-    </div>
-    <section id="#service" class="service">
-      <div class="section-title"><span> Service </span></div>
+    </section>
+
+    <section id="service" class="service section">
+      <div class="section-title"><span>Service</span></div>
       <div class="stack-area">
         <div class="right">
           <div class="cards">
@@ -53,33 +113,37 @@
             </div>
             <div class="card">
               <div class="sub">Boost Productivity</div>
-              <div class="content">Perform Tasks in less time</div>
+              <div class="content">Perform tasks in less time</div>
             </div>
             <div class="card">
               <div class="sub">Facilitated learning</div>
-              <div class="content">train anyone from anywhere</div>
+              <div class="content">Train anyone from anywhere</div>
             </div>
             <div class="card">
               <div class="sub">Support</div>
-              <div class="content">Now its 24/7 support</div>
+              <div class="content">Now it's 24/7 support</div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="#about" class="about">
-      <div class="section-title"><span> About Us </span></div>
+
+    <section id="about" class="about section">
+      <div class="section-title"><span>About Us</span></div>
       <div class="about-container">
         <div class="details">
           <div class="about-header">
-            <h1>Who we are?</h1>
+            <h1>Who We Are?</h1>
           </div>
           <div class="about-content">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
-            eius ipsa similique temporibus consequatur provident quam aspernatur
-            voluptates cumque molestiae veniam ullam officia atque quaerat
-            accusantium commodi voluptatem cupiditate fugit! Cupiditate, id
-            iure? Eveniet officia cum, quia aperiam maiores ratione?
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+              eius ipsa similique temporibus consequatur provident quam
+              aspernatur voluptates cumque molestiae veniam ullam officia atque
+              quaerat accusantium commodi voluptatem cupiditate fugit!
+              Cupiditate, id iure? Eveniet officia cum, quia aperiam maiores
+              ratione?
+            </p>
           </div>
         </div>
         <div class="img-container">
@@ -87,76 +151,88 @@
         </div>
       </div>
     </section>
-    <section id="#our-team" >
-        <div class="section-title"><span> Our Team </span></div>
-        <div class="our-team">
-            <div class="team-container">
-              <div class="team-member">
-                <div class="member-img">
-                    <div class="member-img-container">
 
-                        <img src="./images/team-member1.png" alt="team-member1"  />
-                    </div>
-                </div>
-                <div class="member-info">
-                  <h2>John Doe</h2>
-                  <span>Senior Developer</span>
-                </div>
-              </div>
-              <div class="team-member">
-                <div class="member-img">
-                    <div class="member-img-container">
-
-                        <img src="./images/team-member2.png" alt="team-member2"  />
-                    </div>
-                </div>
-                <div class="member-info">
-                  <h2>Jane Doe</h2>
-                  <span>Senior Designer</span>
-                </div>
-              </div>
-              <div class="team-member">
-                <div class="member-img">
-                    <div class="member-img-container">
-
-                        <img src="./images/team-member3.png" alt="team-member3"  />
-                    </div>
-                </div>
-                <div class="member-info">
-                  <h2>Jane Doe</h2>
-                  <span>Senior Designer</span>
-                </div>
-              </div>
-              
+    <section id="our-team" class="ourTeam section">
+      <div class="section-title"><span>Our Team</span></div>
+      <div class="team-container">
+        <div class="team-member">
+          <div class="member-img-container">
+            <img src="./images/team-member1.png" alt="team-member1" />
+          </div>
+          <div class="member-info">
+            <h2>John Doe</h2>
+            <span>Senior Developer</span>
+          </div>
         </div>
-    </section>
-    <section id="#contact">
-        <div class="contact-details">
-
+        <div class="team-member">
+          <div class="member-img-container">
+            <img src="./images/team-member2.png" alt="team-member2" />
+          </div>
+          <div class="member-info">
+            <h2>Jane Doe</h2>
+            <span>Senior Designer</span>
+          </div>
         </div>
+        <div class="team-member">
+          <div class="member-img-container">
+            <img src="./images/team-member3.png" alt="team-member3" />
+          </div>
+          <div class="member-info">
+            <h2>Jane Doe</h2>
+            <span>Senior Designer</span>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <section id="contact" class="contact section">
+      <div class="section-title"><span>Contact</span></div>
+      <div class="contact-container">
+        <div class="contact-info">
+          <i class="fa-solid fa-envelope contact-icon"></i>
+          <a href="mailto:Info@ovweedesiri.com.ng">Info@ovweedesiri.com.ng</a>
+        </div>
+        <div class="contact-info">
+          <i class="fa-solid fa-phone contact-icon"></i>
+          <a href="tel:+2348170673290">+234-8170673290</a>
+        </div>
+        <div class="contact-info">
+          <i class="fa-brands fa-whatsapp contact-icon"></i>
+          <a href="" target="_blank" rel="noopener noreferrer">Chat Us</a>
+        </div>
+      </div>
+    </section>
+
     <footer>
-        <div class="footer-content">
-          <div class="footer-left">
-            <div class="logo">
-              <a href="#"> PeopleApexSolution </a>
-            </div>
-           
-          </div>
-          <div class="footer-right">
-            <ul>
-              <li><a href="#">Service</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Our Team</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
+      <div class="footer-content">
+        <div class="footer-left">
+          <div class="logo">
+            <a href="#">PeopleApexSolution</a>
           </div>
         </div>
-  <div class="footer-bottom">
-    <p> 2024 PeopleApex Solution. All rights reserved.</p>
-  </div>
+        <div class="footer-right">
+          <ul>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 PeopleApex Solution. All rights reserved.</p>
+        <div class="contact-icons">
+          <a href="#"><i class="fa-solid fa-envelope contact-icon"></i></a>
+          <a href="#"><i class="fa-solid fa-phone contact-icon"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp contact-icon"></i></a>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b144e6efed.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
