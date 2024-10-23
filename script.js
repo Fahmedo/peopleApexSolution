@@ -4,6 +4,7 @@ let stackArea = document.querySelector('.stack-area');
 let navOption = document.querySelector('.nav-option');
 let openBtn = document.querySelector('.open-button');
 let closeBtn = document.querySelector('.close-button');
+let toTop = document.querySelector('.to-top');
 
 function rotateCards() {
   let angle = 0;
@@ -49,6 +50,20 @@ window.addEventListener('scroll', () => {
 //   }
 // }
 // adjust();
+window.addEventListener('scroll', () => {
+  let windowHeight = window.scrollY;
+  if (windowHeight > 500) {
+    console.log('scroll');
+    toTop.style.display = 'block';
+  } else {
+    toTop.style.display = 'none';
+  }
+});
+
+toTop.addEventListener('click', function toTopFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});
 function showMenu() {
   navOption.style.display = 'flex';
   closeBtn.style.display = 'block';

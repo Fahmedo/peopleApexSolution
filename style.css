@@ -83,10 +83,6 @@ li {
   gap: 10px;
 }
 
-.nav-bar ul li a {
-  transition: border-bottom 0.5s ease-out;
-}
-
 .nav-bar ul li a:hover {
   border-bottom: 2px solid #fff;
   color: #fff;
@@ -298,6 +294,8 @@ li {
 
 .mobile-view {
   display: none;
+  width: auto;
+  height: fit-content;
 }
 
 .mobile-view .nav-option {
@@ -311,7 +309,6 @@ li {
   background-color: var(--brand--primary);
   color: #fff;
   border-radius: 5px;
-  transition: background-color 0.3s ease-out, color 0.3s ease-out;
 }
 
 .mobile-view .nav-option:hover {
@@ -433,6 +430,15 @@ footer {
   font-size: 16px;
   gap: 10px;
 }
+.to-top {
+  background-color: var(--brand--primary);
+  border-radius: 20px;
+  padding: 10px;
+  bottom: 1%;
+  right: 1%;
+  position: fixed;
+  display: none;
+}
 
 @media screen and (max-width: 991.98px) {
   .team-container .team-member .member-info {
@@ -524,10 +530,11 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    transition: all 3s ease-in;
   }
 
   .mobile-view {
-    display: flex;
+    display: block;
   }
   .open-button {
     display: flex;
@@ -549,5 +556,8 @@ footer {
 
   .logo {
     max-width: 100%;
+  }
+  .to-top {
+    padding: 5px;
   }
 }
