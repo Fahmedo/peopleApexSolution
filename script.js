@@ -10,7 +10,7 @@ function rotateCards() {
   let angle = 0;
   cards.forEach((card) => {
     if (card.classList.contains('active')) {
-      card.style.transform = `translate(-50%, -230vh) rotate(-48deg)`;
+      card.style.transform = `translate(-50%, -240vh) rotate(-48deg)`;
     } else {
       card.style.transform = `translate(-50%, -50%) rotate(${angle}deg)`;
       angle = angle - 5;
