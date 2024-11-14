@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk&family=Kanit&family=Lato&family=Roboto&display=swap');
 :root {
   --brand--primary-50: #a59cd3;
   --brand--primary: #620093;
@@ -9,6 +8,8 @@
   --neutral--white-200: #f4f4f8;
   --brand--font: 'Roboto', sans-serif;
   --brand--second--font: 'Kanit', sans-serif;
+  --brand--third--font: 'Lato', serif;
+  --brand--fourth--font: 'Host Grotesk', sans-serif;
   --mobile--padding: 5px;
 }
 
@@ -218,19 +219,15 @@ li {
   margin-bottom: 20px;
 }
 .about-details p {
-  font-size: 20px;
+  font-size: 18px;
   color: white;
-  font-weight: 300;
-  font-family: var(--brand--second--font);
+  font-weight: normal;
+  font-family: var(--brand--fourth--font);
 }
 /* .img-container {
   width: 50%;
   height: 600px;
 } */
-.about-container .img-container {
-  width: 100%;
-  height: 600px;
-}
 
 .img-container img {
   width: 100%;
@@ -239,7 +236,19 @@ li {
   border-bottom-left-radius: 60px;
   object-fit: cover;
 }
+.about-container .img-container img {
+  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-top-right-radius: 0px;
+}
 
+.about-container .img-container {
+  width: 80%;
+  /* height: 600px; */
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  margin: auto;
+}
 .service {
   width: 100%;
   height: 300vh;
@@ -250,7 +259,58 @@ li {
   padding: 2rem;
   position: relative;
 }
+.mission {
+  margin: 50px 0;
+}
+.mission-container {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  background-color: var(--brand--primary);
+  color: var(--color-white);
+}
+.mission-content {
+  width: 100%;
+  flex-direction: row;
+  justify-content: start;
+  gap: 50px;
+  padding: 20px;
+  text-align: center;
+}
+.mission-content p {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+.mission-content span {
+  text-align: center;
+  color: var(--color-white);
+  font-size: 24px;
+  font-weight: 600;
+  border-bottom: 2px solid var(--brand-secondary-100);
+  width: auto;
+  margin: auto;
+  margin-bottom: 10px;
+}
 
+.mission-img img {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  object-fit: cover;
+}
+.img-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  box-sizing: border-box;
+  flex-basis: 50%;
+}
 .stack-area {
   width: 100%;
   height: 300vh;
@@ -349,16 +409,17 @@ li {
 .about-container {
   width: 100%;
   height: fit-content;
-  background: var(--brand-secondary-50);
-  color: var(--brand--primary);
-  /* display: flex; */
+  background: var(--brand--primary);
+  color: var(--brand-secondary-100);
   flex-direction: row;
   justify-content: space-between;
   padding: 2rem;
   margin-top: 50px;
 }
 .about-header h1 {
-  color: var(--brand--primary);
+  color: var(--color-white);
+  border-bottom: 2px solid var(--brand-secondary-100);
+  width: 25%;
 }
 .about-content {
   font-family: var(--brand--second--font);
@@ -524,7 +585,12 @@ footer {
   position: fixed;
   display: none;
 }
-
+.core-value span {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-white);
+  border-bottom: 2px solid var(--brand-secondary-100);
+}
 @media screen and (max-width: 991.98px) {
   .team-container .team-member .member-info {
     width: 90%;
@@ -577,6 +643,17 @@ footer {
   .img-container {
     width: 100%;
   }
+  .about-header h1 {
+    width: 100%;
+  }
+  .about-container .img-container {
+    width: 100%;
+    height: fit-content;
+    object-fit: contain;
+  }
+  .about-container .img-container img {
+    object-fit: contain;
+  }
   .card {
     width: 250px;
     padding: 25px 10px;
@@ -628,7 +705,9 @@ footer {
   .section-title span {
     font-size: 16px;
   }
-
+  .mission-container {
+    flex-direction: column;
+  }
   .mobile-view {
     display: block;
   }
