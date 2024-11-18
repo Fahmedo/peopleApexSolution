@@ -90,18 +90,15 @@
 
     <section id="home" class="hero">
       <div class="details">
-        <!-- <div>People <span>Apex</span> Solution</div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
-          iusto?
-        </p> -->
+        <div>People <span>Apex</span> Solution</div>
+        <p>Integrity,Innovation,Empowerment,Collaboration</p>
       </div>
-      <!-- <div class="img-container">
-         <img src="./images/hr-pic.jpg" alt="hr" /> 
-      </div> -->
+      <div class="img-container">
+        <img src="./images/hr-pic.jpg" alt="hr" />
+      </div>
     </section>
 
-    <section id="service" class="service section">
+    <section class="service section">
       <div class="section-title"><span>Our Services</span></div>
 
       <div class="section-header">
@@ -111,59 +108,68 @@
           optimization.
         </p>
       </div>
-      <div class="stack-area">
-        <div class="right">
-          <div class="cards">
-            <div class="card">
-              <div class="sub">Talent Acquisition & Recruitment:</div>
-              <div class="content">
-                We specialize in finding and placing the right talent to drive
-                your business forward, ensuring alignment with your
-                organizational culture and goals.
-              </div>
+      <div class="slider-wrapper">
+        <swiper-container
+          slides-per-view="3"
+          pagination="true"
+          pagination-clickable="true"
+          navigation="false"
+          space-between="30"
+          autoplay-delay="2500"
+          autoplay-disable-on-interaction="false"
+          css-mode="true"
+          class="slides-container"
+          loop="true"
+        >
+          <swiper-slide class="slide">
+            <div class="sub">Talent Acquisition & Recruitment:</div>
+            <div class="content">
+              We specialize in finding and placing the right talent to drive
+              your business forward, ensuring alignment with your organizational
+              culture and goals.
             </div>
-            <div class="card">
-              <div class="sub">Outsourcing:</div>
-              <div class="content">
-                Streamline your operations by entrusting us with comprehensive
-                HR functions, allowing your team to focus on core objectives
-                while we handle your people needs.
-              </div>
+          </swiper-slide>
+          <swiper-slide class="slide">
+            <div class="sub">Outsourcing:</div>
+            <div class="content">
+              Streamline your operations by entrusting us with comprehensive HR
+              functions, allowing your team to focus on core objectives while we
+              handle your people needs.
             </div>
-            <div class="card">
-              <div class="sub">Culture Consulting & Projects:</div>
-              <div class="content">
-                We partner with organizations to cultivate a positive and
-                productive work culture, guiding teams through transformations
-                that improve engagement and performance.
-              </div>
+          </swiper-slide>
+          <swiper-slide class="slide">
+            <div class="sub">Culture Consulting & Projects:</div>
+            <div class="content">
+              We partner with organizations to cultivate a positive and
+              productive work culture, guiding teams through transformations
+              that improve engagement and performance.
             </div>
-            <div class="card">
-              <div class="sub">⁠Startup Support:</div>
-              <div class="content">
-                Our expert team helps startups establish solid HR foundations,
-                from recruitment to employee policies, setting you up for
-                sustainable growth.
-              </div>
+          </swiper-slide>
+          <swiper-slide class="slide">
+            <div class="sub">⁠Startup Support:</div>
+            <div class="content">
+              Our expert team helps startups establish solid HR foundations,
+              from recruitment to employee policies, setting you up for
+              sustainable growth.
             </div>
-            <div class="card">
-              <div class="sub">HR Compliance & Policy:</div>
-              <div class="content">
-                Stay compliant and safeguard your business with policies and
-                processes that meet regulatory standards and reflect best
-                practices in HR.
-              </div>
+          </swiper-slide>
+          <swiper-slide class="slide">
+            <div class="sub">HR Compliance & Policy:</div>
+            <div class="content">
+              Stay compliant and safeguard your business with policies and
+              processes that meet regulatory standards and reflect best
+              practices in HR.
             </div>
-            <div class="card">
-              <div class="sub">Workforce Planning:</div>
-              <div class="content">
-                We help you strategically manage your workforce, planning for
-                future needs to ensure your organization is always equipped with
-                the right skills and talent.
-              </div>
+          </swiper-slide>
+          <swiper-slide class="slide">
+            <div class="sub">Workforce Planning:</div>
+            <div class="content">
+              We help you strategically manage your workforce, planning for
+              future needs to ensure your organization is always equipped with
+              the right skills and talent.
             </div>
-          </div>
-        </div>
+          </swiper-slide>
+        </swiper-container>
       </div>
     </section>
 
@@ -248,7 +254,7 @@
           </div>
           <div class="member-info">
             <h2>Lilian Ofere-Nosakhare</h2>
-            <span></span>
+            <span>CEO</span>
           </div>
         </div>
         <!-- <div class="team-member">
@@ -293,49 +299,56 @@
 
     <section id="contact" class="contact section">
       <div class="section-title"><span>Contact</span></div>
-      <div class="contact-container">
-        <a
-          target="_blank"
-          href="mailto:info@peopleapexsolution.org"
-          class="contact-info"
-          class="contact-info"
-        >
-          <i class="fa-solid fa-envelope contact-icon"></i>
-          <span> info@peopleapexsolution.org </span>
-        </a>
-        <!-- <div class="contact-info">
+      <div class="contact-wrapper">
+        <div class="contact-container">
+          <a
+            target="_blank"
+            href="mailto:info@peopleapexsolution.org"
+            class="contact-info"
+          >
+            <i class="fa-solid fa-envelope contact-icon"></i>
+            <span> info@peopleapexsolution.org </span>
+          </a>
+          <!-- <div class="contact-info">
           <i class="fa-solid fa-phone contact-icon"></i>
           <a href="tel:+2348170673290">+234-8170673290</a>
         </div> -->
-        <a
-          target="_blank"
-          href=" https://www.linkedin.com/company/people-apex-solution"
-          class="contact-info"
-        >
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a
-          target="_blank"
-          href=" https://web.facebook.com/profile.php?id=61568434900571"
-          class="contact-info"
-        >
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-        <a
-          target="_blank"
-          href="https://www.instagram.com/peopleapexsolution?igsh=NXNxZXdrOXNqdGxn&utm_source=qr"
-          class="contact-info"
-        >
-          <i class="fa-brands fa-square-instagram"></i>
-        </a>
-        <a
-          href="https://wa.me/2348134677442"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="contact-info"
-        >
-          <i class="fa-brands fa-square-whatsapp"></i>
-        </a>
+          <a
+            target="_blank"
+            href=" https://www.linkedin.com/company/people-apex-solution"
+            class="contact-info"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            target="_blank"
+            href=" https://web.facebook.com/profile.php?id=61568434900571"
+            class="contact-info"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.instagram.com/peopleapexsolution?igsh=NXNxZXdrOXNqdGxn&utm_source=qr"
+            class="contact-info"
+          >
+            <i class="fa-brands fa-square-instagram"></i>
+          </a>
+          <a
+            href="https://wa.me/2348134677442"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-info"
+          >
+            <i class="fa-brands fa-square-whatsapp"></i>
+          </a>
+        </div>
+        <div class="contact-location contact-info">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>
+            1135, Royal Pine Estate, Orchid Road, Lekki Lagos Nigeria.
+          </span>
+        </div>
       </div>
     </section>
     <div class="to-top">
@@ -370,5 +383,6 @@
       src="https://kit.fontawesome.com/b144e6efed.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   </body>
 </html>
